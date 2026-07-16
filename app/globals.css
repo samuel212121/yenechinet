@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F7F8FB;
+  color: #0A1628;
+}
+
+/* ---------- Glassmorphism utilities ---------- */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-navy {
+  background: linear-gradient(135deg, rgba(21, 41, 79, 0.55), rgba(8, 20, 40, 0.65));
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Route line signature motif ---------- */
+.route-line {
+  stroke-dasharray: 8 10;
+}
+
+/* ---------- Ambient glow blobs ---------- */
+.glow-red {
+  background: radial-gradient(circle, rgba(204, 34, 34, 0.35) 0%, rgba(204, 34, 34, 0) 70%);
+}
+.glow-gold {
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.3) 0%, rgba(245, 166, 35, 0) 70%);
+}
+
+/* ---------- Marquee (partners / logo strip) ---------- */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+::selection {
+  background: #CC2222;
+  color: white;
+}
