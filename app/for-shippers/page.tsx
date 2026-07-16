@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import {
   ArrowRight, Zap, MapPin, DollarSign,
@@ -36,8 +36,8 @@ export default function ForShippersPage() {
 
   function handleMouseMove(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     const rect = event.currentTarget.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
+    // const width = rect.width;
+    // const height = rect.height;
     const mouseX = event.clientX - rect.left;
     const mouseY = event.clientY - rect.top;
     x.set(mouseX);
@@ -109,7 +109,7 @@ export default function ForShippersPage() {
               >
                 {/* Foreground Hero Image Mockup Container */}
                 <div className="relative w-full aspect-[9/16] rounded-[2rem] overflow-hidden bg-navy-deep/50 border border-white/5">
-                  <img 
+                  <Image
                     src="/images/shipper2.png" 
                     alt="Yene Chinet Shipper Dashboard Tracking Showcase"
                     className="w-full h-full object-cover object-center"

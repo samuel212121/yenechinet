@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Star, Smartphone, Phone, ArrowRightLeft, Download, CheckCircle2, ShieldCheck, ArrowRight } from "lucide-react";
+import { Star, Smartphone, Phone, ArrowRightLeft, Download, CheckCircle2,} from "lucide-react";
 
 export default function AppDownload() {
   return (
@@ -154,7 +154,7 @@ export default function AppDownload() {
 
              {/* Bottom Status Tag */}
 <motion.a
-  href="https://play.google.com/store/apps/details?id=com.yenechinet.driver" // Replace with your actual driver app package ID when ready
+  href="https://play.google.com/store/apps/details?id=com.yenechinet.driver" 
   target="_blank"
   rel="noopener noreferrer"
   whileHover={{ scale: 1.02, backgroundColor: "rgba(255, 255, 255, 0.15)" }}

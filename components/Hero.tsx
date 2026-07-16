@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -132,7 +132,7 @@ export default function Hero() {
             animate="animate"
             className="absolute left-0 right-0 h-16 md:h-24 pointer-events-none flex items-center justify-center z-20"
           >
-            <img 
+            <Image
               src="/images/logo.png" 
               alt="Yene Chinet Logo"
               className="h-full w-auto object-contain drop-shadow-[0_4px_12px_rgba(255,255,255,0.3)]" 

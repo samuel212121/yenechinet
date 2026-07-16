@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
@@ -139,7 +139,7 @@ export default function ForDriversPage() {
               >
                 {/* Image Wrap Frame Context */}
                 <div className="relative w-full aspect-[9/16] rounded-[2rem] overflow-hidden bg-navy-deep/50 border border-white/5">
-                  <img 
+                  <Image 
                     src="/images/driver1.png" 
                     alt="Yene Chinet Driver Premium Performance Dashboard"
                     className="w-full h-full object-cover object-center"

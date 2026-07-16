@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Truck, Shield, Navigation, ArrowRight } from "lucide-react";
+import {Truck, Shield, Navigation, ArrowRight } from "lucide-react";
 
 export default function TruckPromo() {
   return (
