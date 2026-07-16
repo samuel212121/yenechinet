@@ -67,6 +67,7 @@ export default function Navbar() {
               priority
             />
           </Link>
+          
 
           {/* DESKTOP NAVIGATION LINKS */}
           <nav className="hidden md:flex items-center gap-7">
